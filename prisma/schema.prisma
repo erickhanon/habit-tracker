@@ -32,7 +32,7 @@ model Day {
 model habitWeekDays {
   id      String @id @default(uuid())
   habitId String
-  weekDay String
+  weekDay Int
 
   habit Habit @relation(fields: [habitId], references: [id])
 
